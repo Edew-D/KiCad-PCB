@@ -1,11 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP 4N25_|_TIL_111
-D DC Optocoupler Base Connected, Vce 30V, CTR 20%, Viso 2500V, DIP6
-K NPN DC Optocoupler Base Connected
-F https://www.vishay.com/docs/83725/4n25.pdf
-$ENDCMP
-#
 $CMP 4N26
 D DC Optocoupler Base Connected, Vce 30V, CTR 20%, Viso 1500V, DIP6
 K NPN DC Optocoupler Base Connected
@@ -42,9 +36,27 @@ K NPN DC Optocoupler Base Connected
 F https://www.vishay.com/docs/81181/4n35.pdf
 $ENDCMP
 #
-$CMP MLL4148
+$CMP BYV26E_Diode
 D Diode symbol for simulation only. Pin order incompatible with official kicad footprints
 K simulation
+F ~
+$ENDCMP
+#
+$CMP C
+D Unpolarized capacitor
+K cap capacitor
+F ~
+$ENDCMP
+#
+$CMP CP1
+D Polarized capacitor, US symbol
+K cap capacitor
+F ~
+$ENDCMP
+#
+$CMP LED
+D Light emitting diode
+K LED diode
 F ~
 $ENDCMP
 #

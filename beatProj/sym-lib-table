@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name beatComponentLib)(type Legacy)(uri ${KIPRJMOD}/ComponentLib/beatComponentLib.lib)(options "")(descr ""))
+  (lib (name az850-x)(type Legacy)(uri ${KIPRJMOD}/ComponentLib/az850-x.lib)(options "")(descr ""))
+)

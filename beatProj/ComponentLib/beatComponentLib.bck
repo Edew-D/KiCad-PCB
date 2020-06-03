@@ -36,15 +36,27 @@ K NPN DC Optocoupler Base Connected
 F https://www.vishay.com/docs/81181/4n35.pdf
 $ENDCMP
 #
-$CMP MLL4148
+$CMP BYV26E_Diode
 D Diode symbol for simulation only. Pin order incompatible with official kicad footprints
 K simulation
 F ~
 $ENDCMP
 #
-$CMP R_US
-D Resistor, US symbol
-K R res resistor
+$CMP C
+D Unpolarized capacitor
+K cap capacitor
+F ~
+$ENDCMP
+#
+$CMP CP1
+D Polarized capacitor, US symbol
+K cap capacitor
+F ~
+$ENDCMP
+#
+$CMP LED
+D Light emitting diode
+K LED diode
 F ~
 $ENDCMP
 #
