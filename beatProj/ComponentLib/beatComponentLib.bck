@@ -60,6 +60,12 @@ K LED diode
 F ~
 $ENDCMP
 #
+$CMP R_US
+D Resistor, US symbol
+K R res resistor
+F ~
+$ENDCMP
+#
 $CMP TIL111
 D DC Optocoupler, Phototransistor NPN, DIP6
 K NPN DC Optocoupler Base Connected

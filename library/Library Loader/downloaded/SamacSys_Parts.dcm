@@ -1,0 +1,18 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 577002B04000G
+D AAVID THERMALLOY - 577002B04000G - HEAT SINK
+F http://www.aavid.com/sites/default/files/products/boardlevel/aavid-standard-heatsinks.pdf
+$ENDCMP
+#
+$CMP NE555DR
+D Single Precision Timer
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP UC2844AD8
+D Current Mode PWM Controller
+F http://www.ti.com/lit/gpn/uc2844a
+$ENDCMP
+#
+#End Doc Library
