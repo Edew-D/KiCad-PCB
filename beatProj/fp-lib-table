@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name test)(type KiCad)(uri "B:/Windows Files/Github/KiCad-PCB/beatProj/ComponentLib")(options "")(descr ""))
+  (lib (name test2)(type KiCad)(uri "B:/Windows Files/Github/KiCad-PCB/beatProj")(options "")(descr ""))
+)

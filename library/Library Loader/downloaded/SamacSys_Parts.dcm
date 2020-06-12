@@ -5,6 +5,11 @@ D AAVID THERMALLOY - 577002B04000G - HEAT SINK
 F http://www.aavid.com/sites/default/files/products/boardlevel/aavid-standard-heatsinks.pdf
 $ENDCMP
 #
+$CMP IRFBE30SPBF
+D IRFBE30SPBF, N-channel MOSFET Transistor 4.1 A 800 V, 3-Pin D2PAK
+F http://www.vishay.com/docs/91119/91119.pdf
+$ENDCMP
+#
 $CMP NE555DR
 D Single Precision Timer
 F http://www.ti.com/lit/ds/symlink/ne555.pdf

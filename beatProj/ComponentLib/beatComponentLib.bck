@@ -1,5 +1,23 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 1N5817
+D 20V 1A Schottky Barrier Rectifier Diode, DO-41
+K diode Schottky
+F http://www.vishay.com/docs/88525/1n5817.pdf
+$ENDCMP
+#
+$CMP 1N5818
+D 30V 1A Schottky Barrier Rectifier Diode, DO-41
+K diode Schottky
+F http://www.vishay.com/docs/88525/1n5817.pdf
+$ENDCMP
+#
+$CMP 1N5819
+D 40V 1A Schottky Barrier Rectifier Diode, DO-41
+K diode Schottky
+F http://www.vishay.com/docs/88525/1n5817.pdf
+$ENDCMP
+#
 $CMP 4N26
 D DC Optocoupler Base Connected, Vce 30V, CTR 20%, Viso 1500V, DIP6
 K NPN DC Optocoupler Base Connected
@@ -66,10 +84,39 @@ K R res resistor
 F ~
 $ENDCMP
 #
+$CMP SB130
+D 30V 1A Schottky Barrier Rectifier Diode, DO-41
+K diode Schottky
+F http://www.diodes.com/_files/datasheets/ds23022.pdf
+$ENDCMP
+#
+$CMP SB140
+D 40V 1A Schottky Barrier Rectifier Diode, DO-41
+K diode Schottky
+F http://www.diodes.com/_files/datasheets/ds23022.pdf
+$ENDCMP
+#
+$CMP SB150
+D 50V 1A Schottky Barrier Rectifier Diode, DO-41
+K diode Schottky
+F http://www.diodes.com/_files/datasheets/ds23022.pdf
+$ENDCMP
+#
+$CMP SB160
+D 60V 1A Schottky Barrier Rectifier Diode, DO-41
+K diode Schottky
+F http://www.diodes.com/_files/datasheets/ds23022.pdf
+$ENDCMP
+#
 $CMP TIL111
 D DC Optocoupler, Phototransistor NPN, DIP6
 K NPN DC Optocoupler Base Connected
 F https://www.egr.msu.edu/eceshop/Parts_Inventory/datasheets/til111.pdf
+$ENDCMP
+#
+$CMP UC2844AD8
+D Current Mode PWM Controller
+F http://www.ti.com/lit/gpn/uc2844a
 $ENDCMP
 #
 #End Doc Library
