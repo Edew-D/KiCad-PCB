@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -303,8 +303,6 @@ F 3 "~" H 4000 3050 50  0001 C CNN
 	1    4000 3050
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3850 3050 3700 3050
 $Comp
 L beatComponentLib:R_US R132
 U 1 1 5EE809F7
@@ -597,4 +595,12 @@ Wire Wire Line
 Connection ~ 5350 3050
 Wire Wire Line
 	5350 3050 5500 3050
+Wire Wire Line
+	3850 3050 3700 3050
+$Sheet
+S 150  8750 11500 6600
+U 5EEFDD53
+F0 "sheet2" 50
+F1 "sheet2.sch" 50
+$EndSheet
 $EndSCHEMATC

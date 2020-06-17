@@ -1,0 +1,507 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L beatComponentLib:Transformer_1P_1S T?
+U 1 1 5EF02EF4
+P 2400 1900
+AR Path="/5EF02EF4" Ref="T?"  Part="1" 
+AR Path="/5EEFDD53/5EF02EF4" Ref="T?"  Part="1" 
+F 0 "T?" V 2446 1612 50  0000 R CNN
+F 1 "Transformer_1P_1S" V 2355 1612 50  0000 R CNN
+F 2 "" H 2400 1900 50  0001 C CNN
+F 3 "~" H 2400 1900 50  0001 C CNN
+	1    2400 1900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2200 2300 1900 2300
+Text GLabel 1900 2300 0    50   Input ~ 0
+-BAT_FUSED
+Wire Wire Line
+	2600 1500 2800 1500
+$Comp
+L beatComponentLib:R_Variable_US R?
+U 1 1 5EF02EFD
+P 2950 1500
+AR Path="/5EF02EFD" Ref="R?"  Part="1" 
+AR Path="/5EEFDD53/5EF02EFD" Ref="R?"  Part="1" 
+F 0 "R?" V 3215 1500 50  0000 C CNN
+F 1 "R_Variable_US" V 3124 1500 50  0000 C CNN
+F 2 "" V 2880 1500 50  0001 C CNN
+F 3 "~" H 2950 1500 50  0001 C CNN
+	1    2950 1500
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3100 1500 2    50   Input ~ 0
++BIAS
+Wire Wire Line
+	2200 1500 2200 1000
+$Comp
+L beatComponentLib:TestPoint TP?
+U 1 1 5EF02F05
+P 4600 1000
+AR Path="/5EF02F05" Ref="TP?"  Part="1" 
+AR Path="/5EEFDD53/5EF02F05" Ref="TP?"  Part="1" 
+F 0 "TP?" H 4846 1305 25  0000 C CNN
+F 1 "TP" H 4846 1234 50  0000 C CNN
+F 2 "" H 4600 1000 50  0001 C CNN
+F 3 "~" H 4600 1000 50  0001 C CNN
+	1    4600 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2300 4400 2300
+Wire Wire Line
+	2200 1000 3650 1000
+$Comp
+L beatComponentLib:TestPoint TP?
+U 1 1 5EF02F0D
+P 4700 2300
+AR Path="/5EF02F0D" Ref="TP?"  Part="1" 
+AR Path="/5EEFDD53/5EF02F0D" Ref="TP?"  Part="1" 
+F 0 "TP?" H 4946 2605 25  0000 C CNN
+F 1 "TP" H 4946 2534 50  0000 C CNN
+F 2 "" H 4700 2300 50  0001 C CNN
+F 3 "~" H 4700 2300 50  0001 C CNN
+	1    4700 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L beatComponentLib:C C?
+U 1 1 5EF02F13
+P 3650 2850
+AR Path="/5EF02F13" Ref="C?"  Part="1" 
+AR Path="/5EEFDD53/5EF02F13" Ref="C11"  Part="1" 
+F 0 "C11" H 3765 2896 50  0000 L CNN
+F 1 "022uF 1000VDC" H 3765 2805 50  0000 L CNN
+F 2 "" H 3688 2700 50  0001 C CNN
+F 3 "~" H 3650 2850 50  0001 C CNN
+	1    3650 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L beatComponentLib:C C?
+U 1 1 5EF02F19
+P 4400 2850
+AR Path="/5EF02F19" Ref="C?"  Part="1" 
+AR Path="/5EEFDD53/5EF02F19" Ref="C12"  Part="1" 
+F 0 "C12" H 4515 2896 50  0000 L CNN
+F 1 "022uF 1000VDC" H 4515 2805 50  0000 L CNN
+F 2 "" H 4438 2700 50  0001 C CNN
+F 3 "~" H 4400 2850 50  0001 C CNN
+	1    4400 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5EF02F1F
+P 4050 3500
+AR Path="/5EF02F1F" Ref="#PWR?"  Part="1" 
+AR Path="/5EEFDD53/5EF02F1F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4050 3300 50  0001 C CNN
+F 1 "GNDPWR" H 4054 3346 50  0000 C CNN
+F 2 "" H 4050 3450 50  0001 C CNN
+F 3 "" H 4050 3450 50  0001 C CNN
+	1    4050 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2700 4400 2300
+Connection ~ 4400 2300
+Wire Wire Line
+	4400 2300 4700 2300
+Wire Wire Line
+	3650 3000 4050 3000
+Wire Wire Line
+	4050 3500 4050 3000
+Connection ~ 4050 3000
+Wire Wire Line
+	4050 3000 4400 3000
+Wire Wire Line
+	3650 2700 3650 1000
+Connection ~ 3650 1000
+Wire Wire Line
+	3650 1000 4600 1000
+$Comp
+L beatComponentLib:C C10
+U 1 1 5EF04000
+P 5100 1450
+F 0 "C10" H 5215 1496 50  0000 L CNN
+F 1 "0.1uF 630V 15mm" H 5215 1405 50  0000 L CNN
+F 2 "" H 5138 1300 50  0001 C CNN
+F 3 "~" H 5100 1450 50  0001 C CNN
+	1    5100 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L beatComponentLib:CP1 C9
+U 1 1 5EF04240
+P 5650 1750
+F 0 "C9" H 5765 1796 50  0000 L CNN
+F 1 "100uF 450V" H 5765 1705 50  0000 L CNN
+F 2 "" H 5650 1750 50  0001 C CNN
+F 3 "~" H 5650 1750 50  0001 C CNN
+	1    5650 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L beatComponentLib:BYV26E_Diode D?
+U 1 1 5EF04E75
+P 6500 1350
+F 0 "D?" V 6561 1005 50  0000 R CNN
+F 1 "BYV26E_Diode" V 6477 1005 40  0000 R CNN
+F 2 "" H 6500 1350 50  0001 C CNN
+F 3 "~" H 6500 1350 50  0001 C CNN
+	1    6500 1350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4600 1000 5100 1000
+Connection ~ 4600 1000
+Text GLabel 8400 1000 2    50   Input ~ 0
++BAT_CLEAN
+$Comp
+L beatComponentLib:R_US R13
+U 1 1 5EF063D3
+P 7500 1350
+F 0 "R13" H 7568 1396 50  0000 L CNN
+F 1 "1k 2W" H 7568 1305 50  0000 L CNN
+F 2 "" V 7540 1340 50  0001 C CNN
+F 3 "~" H 7500 1350 50  0001 C CNN
+	1    7500 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L beatComponentLib:C C21
+U 1 1 5EF06BC0
+P 6500 2050
+F 0 "C21" H 6615 2096 50  0000 L CNN
+F 1 "220pF 1KV" H 6615 2005 50  0000 L CNN
+F 2 "" H 6538 1900 50  0001 C CNN
+F 3 "~" H 6500 2050 50  0001 C CNN
+	1    6500 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 1300 5100 1000
+Connection ~ 5100 1000
+Wire Wire Line
+	5100 1000 5650 1000
+Wire Wire Line
+	5650 1000 5650 1600
+Connection ~ 5650 1000
+Wire Wire Line
+	5650 1000 6500 1000
+Wire Wire Line
+	4700 2300 5100 2300
+Connection ~ 4700 2300
+Wire Wire Line
+	5650 1900 5650 2300
+Connection ~ 5650 2300
+Wire Wire Line
+	5650 2300 6000 2300
+Wire Wire Line
+	5100 1600 5100 2300
+Connection ~ 5100 2300
+Wire Wire Line
+	5100 2300 5650 2300
+Wire Wire Line
+	6500 1150 6500 1000
+Connection ~ 6500 1000
+Wire Wire Line
+	6500 1000 7500 1000
+Wire Wire Line
+	7500 1200 7500 1000
+Connection ~ 7500 1000
+Wire Wire Line
+	7500 1000 8400 1000
+Wire Wire Line
+	6500 1550 6500 1700
+Wire Wire Line
+	7500 1500 7500 1700
+Wire Wire Line
+	7500 1700 6500 1700
+Connection ~ 6500 1700
+Wire Wire Line
+	6500 1700 6500 1900
+$Comp
+L beatComponentLib:IRFBE30PBF U?
+U 1 1 5EF12270
+P 6200 3500
+F 0 "U?" H 6630 3553 60  0000 L CNN
+F 1 "IRFBE30PBF" H 6630 3447 60  0000 L CNN
+F 2 "TO220AB_VIS" H 6650 3240 60  0001 C CNN
+F 3 "" H 6200 3500 60  0000 C CNN
+	1    6200 3500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6500 2200 6500 3200
+$Comp
+L beatComponentLib:R_US R18
+U 1 1 5EF24DFF
+P 6500 4050
+F 0 "R18" H 6568 4096 50  0000 L CNN
+F 1 "0.47 5W 5%" H 6568 4005 50  0000 L CNN
+F 2 "" V 6540 4040 50  0001 C CNN
+F 3 "~" H 6500 4050 50  0001 C CNN
+	1    6500 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3800 6500 3900
+Wire Wire Line
+	6200 3500 5000 3500
+Wire Wire Line
+	6500 3900 5000 3900
+Connection ~ 6500 3900
+Text GLabel 5000 3500 0    50   Input ~ 0
+GT_DRV
+Text GLabel 5000 3900 0    50   Input ~ 0
+I_SNS
+Wire Wire Line
+	6500 4200 6500 4300
+Text GLabel 3100 4300 0    50   Input ~ 0
+RTN_BIAS
+Text GLabel 3000 4750 0    50   Input ~ 0
++12FB
+Wire Wire Line
+	3000 4750 4350 4750
+$Comp
+L beatComponentLib:BYV26E_Diode D9
+U 1 1 5EF2EF16
+P 7650 4750
+F 0 "D9" H 7673 4283 50  0000 C CNN
+F 1 "ES1D" H 7673 4367 40  0000 C CNN
+F 2 "" H 7650 4750 50  0001 C CNN
+F 3 "~" H 7650 4750 50  0001 C CNN
+	1    7650 4750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 4300 3400 4300
+Text Label 8100 4750 0    50   ~ 0
++12_SRC
+Wire Wire Line
+	7850 4750 8100 4750
+Wire Wire Line
+	3400 4300 3400 5850
+Wire Wire Line
+	3400 5850 4350 5850
+Connection ~ 3400 4300
+Wire Wire Line
+	3400 4300 6500 4300
+$Comp
+L beatComponentLib:LED D52
+U 1 1 5EF383A7
+P 4350 5050
+F 0 "D52" V 4389 4932 50  0000 R CNN
+F 1 "LED Clear Green" V 4298 4932 50  0000 R CNN
+F 2 "" H 4350 5050 50  0001 C CNN
+F 3 "~" H 4350 5050 50  0001 C CNN
+	1    4350 5050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L beatComponentLib:R_US R22
+U 1 1 5EF3916D
+P 4350 5500
+F 0 "R22" H 4418 5546 50  0000 L CNN
+F 1 "1.8K" H 4418 5455 50  0000 L CNN
+F 2 "" V 4390 5490 50  0001 C CNN
+F 3 "~" H 4350 5500 50  0001 C CNN
+	1    4350 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L beatComponentLib:SB130 D11
+U 1 1 5EF39CC3
+P 5200 5150
+F 0 "D11" V 5154 5229 50  0000 L CNN
+F 1 "06AC6699" V 5245 5229 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5200 4975 50  0001 C CNN
+F 3 "http://www.diodes.com/_files/datasheets/ds23022.pdf" H 5200 5150 50  0001 C CNN
+	1    5200 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L beatComponentLib:C C26
+U 1 1 5EF3BEF0
+P 6000 5250
+F 0 "C26" H 6115 5296 50  0000 L CNN
+F 1 "10uF SMD" H 6115 5205 50  0000 L CNN
+F 2 "" H 6038 5100 50  0001 C CNN
+F 3 "~" H 6000 5250 50  0001 C CNN
+	1    6000 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L beatComponentLib:CP1 C23
+U 1 1 5EF3C4A5
+P 6700 5300
+F 0 "C23" H 6815 5346 50  0000 L CNN
+F 1 "100uF 35V" H 6815 5255 50  0000 L CNN
+F 2 "" H 6700 5300 50  0001 C CNN
+F 3 "~" H 6700 5300 50  0001 C CNN
+	1    6700 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 4900 4350 4750
+Connection ~ 4350 4750
+Wire Wire Line
+	4350 4750 5200 4750
+Wire Wire Line
+	4350 5200 4350 5350
+Wire Wire Line
+	4350 5650 4350 5850
+Connection ~ 4350 5850
+Wire Wire Line
+	4350 5850 5200 5850
+Wire Wire Line
+	5200 5000 5200 4750
+Connection ~ 5200 4750
+Wire Wire Line
+	5200 4750 6000 4750
+Wire Wire Line
+	5200 5300 5200 5850
+Connection ~ 5200 5850
+Wire Wire Line
+	5200 5850 6000 5850
+Wire Wire Line
+	6000 5100 6000 4750
+Connection ~ 6000 4750
+Wire Wire Line
+	6000 4750 6700 4750
+Wire Wire Line
+	6000 5400 6000 5850
+Connection ~ 6000 5850
+Wire Wire Line
+	6000 5850 6700 5850
+Wire Wire Line
+	6700 5150 6700 4750
+Connection ~ 6700 4750
+Wire Wire Line
+	6700 4750 7450 4750
+Wire Wire Line
+	6700 5450 6700 5850
+Text GLabel 1450 6300 0    50   Input ~ 0
+RTN_OSC
+Text GLabel 1300 7350 0    50   Input ~ 0
++24V
+Wire Wire Line
+	1450 6300 1650 6300
+Text Label 6500 6300 0    50   ~ 0
++24_RTN
+Wire Wire Line
+	1300 7350 1650 7350
+Text Label 6550 7350 0    50   ~ 0
+-24V_SRC
+$Comp
+L beatComponentLib:TestPoint tp
+U 1 1 5EF484E1
+P 1650 6300
+F 0 "tp" H 1896 6605 25  0000 C CNN
+F 1 "TP41" H 1896 6534 50  0000 C CNN
+F 2 "" H 1650 6300 50  0001 C CNN
+F 3 "~" H 1650 6300 50  0001 C CNN
+	1    1650 6300
+	1    0    0    -1  
+$EndComp
+Connection ~ 1650 6300
+Wire Wire Line
+	1650 6300 2300 6300
+$Comp
+L beatComponentLib:TestPoint tp
+U 1 1 5EF48C41
+P 1650 7350
+F 0 "tp" H 1896 7655 25  0000 C CNN
+F 1 "TP42" H 1896 7584 50  0000 C CNN
+F 2 "" H 1650 7350 50  0001 C CNN
+F 3 "~" H 1650 7350 50  0001 C CNN
+	1    1650 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L beatComponentLib:LED D?
+U 1 1 5EF49451
+P 2300 6600
+F 0 "D?" V 2339 6483 50  0000 R CNN
+F 1 "LED" V 2248 6483 50  0000 R CNN
+F 2 "" H 2300 6600 50  0001 C CNN
+F 3 "~" H 2300 6600 50  0001 C CNN
+	1    2300 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L beatComponentLib:C C?
+U 1 1 5EF49923
+P 3050 6800
+F 0 "C?" H 3165 6846 50  0000 L CNN
+F 1 "C" H 3165 6755 50  0000 L CNN
+F 2 "" H 3088 6650 50  0001 C CNN
+F 3 "~" H 3050 6800 50  0001 C CNN
+	1    3050 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L beatComponentLib:CP1 C?
+U 1 1 5EF49D1D
+P 4600 6800
+F 0 "C?" H 4715 6846 50  0000 L CNN
+F 1 "CP1" H 4715 6755 50  0000 L CNN
+F 2 "" H 4600 6800 50  0001 C CNN
+F 3 "~" H 4600 6800 50  0001 C CNN
+	1    4600 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L beatComponentLib:BYV26E_Diode D?
+U 1 1 5EF4A0F7
+P 5750 7350
+F 0 "D?" H 5772 7600 50  0000 C CNN
+F 1 "BYV26E_Diode" H 5772 7516 40  0000 C CNN
+F 2 "" H 5750 7350 50  0001 C CNN
+F 3 "~" H 5750 7350 50  0001 C CNN
+	1    5750 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 7350 5950 7350
+Wire Wire Line
+	5550 7350 3050 7350
+Connection ~ 1650 7350
+Wire Wire Line
+	3050 6950 3050 7350
+Connection ~ 3050 7350
+Wire Wire Line
+	3050 7350 2300 7350
+Wire Wire Line
+	3050 6650 3050 6300
+Connection ~ 3050 6300
+Wire Wire Line
+	3050 6300 6500 6300
+Wire Wire Line
+	2300 6450 2300 6300
+Connection ~ 2300 6300
+Wire Wire Line
+	2300 6300 3050 6300
+Wire Wire Line
+	2300 6750 2300 7350
+Connection ~ 2300 7350
+Wire Wire Line
+	2300 7350 1650 7350
+$EndSCHEMATC
